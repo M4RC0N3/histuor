@@ -3,7 +3,9 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { Landing } from '../pages/landing/landing';
 import { SignIn } from '../pages/sign-in/sign-in';
 import { SignUp } from '../pages/sign-up/sign-up';
+import { Home } from '../pages/home/home';
 import { ArView } from '../pages/ar-view/ar-view';
+import { TabNavigation } from 'src/components/tab-navigation/tab-navigation';
 const routes: Routes = [
   {
     path: '',
@@ -27,9 +29,18 @@ const routes: Routes = [
     loadChildren: () => import('../pages/sign-up/sign-up.module').then(m => m.SignUpModule)
   },
   {
-    path: 'ar-view',
-    component: ArView,
-    loadChildren: () => import('../pages/ar-view/ar-view.module').then(m => m.ArViewModule)
+    path: '',
+    component:TabNavigation,
+    children: [
+      {
+        path: 'home',
+        loadChildren: () => import('../pages/home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'ar-view',
+        loadChildren: () => import('../pages/ar-view/ar-view.module').then(m => m.ArViewModule)
+      }
+    ]
   },
 ];
 

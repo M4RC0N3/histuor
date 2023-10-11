@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { ArView } from './ar-view';
+import { Home } from './home';
 import { RouterModule } from '@angular/router';
 import { ComponentsModule } from '../../components/components.module';
 @NgModule({
@@ -10,9 +10,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild([{ path: '', component: ArView }]),
+    RouterModule.forChild([{ path: '', component: Home }]),
     ComponentsModule
   ],
-  declarations: [ArView]
+  declarations: [Home]
 })
-export class ArViewModule {}
+export class HomeModule {}
