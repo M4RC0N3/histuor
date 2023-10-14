@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { Landing } from './landing';
 import { RouterModule } from '@angular/router';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -11,6 +12,7 @@ import { RouterModule } from '@angular/router';
     IonicModule,
     RouterModule
   ],
-  declarations: [Landing]
+  declarations: [Landing],
+  exports: [Landing]
 })
 export class LandingModule {}

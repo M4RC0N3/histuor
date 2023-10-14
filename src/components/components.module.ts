@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TabNavigation } from './tab-navigation/tab-navigation';
 import { IonicModule } from '@ionic/angular';
+import { Categorie } from './categorie/categorie';
 @NgModule({
-  declarations: [TabNavigation],
   imports: [CommonModule, IonicModule],
-  exports: [TabNavigation] // Exporte os componentes que deseja compartilhar
+  declarations: [TabNavigation, Categorie],
+  exports: [TabNavigation, Categorie] // Exporte os componentes que deseja compartilhar
 })
 export class ComponentsModule {}
