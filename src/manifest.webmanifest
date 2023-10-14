@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "histour",
+  "short_name": "HT",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
