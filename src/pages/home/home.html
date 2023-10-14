@@ -11,7 +11,20 @@
                 <categorie [type]="'beach'"></categorie>
             </ion-col>
         </ion-row>
-        <ion-row></ion-row>
+        <ion-row id="places-container">
+            <ion-col id="header-container" class="ion-no-padding" size="12">
+                <h2>Lugares famosos</h2>
+                <p routerLink="/places-list">Ver mais</p>
+            </ion-col>
+
+            <ion-col id="places-list" class="ion-no-padding">
+                <place [data]="{}"></place>
+                <place [data]="{}"></place>
+                <place [data]="{}"></place>
+                <place [data]="{}"></place>
+            </ion-col>
+            
+        </ion-row>
         <ion-row></ion-row>
     </ion-grid>
 </ion-content>
