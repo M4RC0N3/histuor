@@ -22,3 +22,39 @@ ion-content
                 categorie
                     height: 100%
                     aspect-ratio: 1/1
+        @mixin headerContainer()
+            #header-container
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: 0 20px
+                margin-bottom: 15px
+                h2
+                    color: #324857
+                    font-family: 'roboto-bold'
+                    margin: 0
+                    font-size: 1.2rem
+                p
+                    color: #3DA8F1
+                    margin: 0
+                    font-family: 'inter-medium'
+                    font-size: .8rem
+        #places-container
+            @include headerContainer
+            #places-list
+                display: flex
+                flex-direction: row
+                width: 100%
+                gap: 20px
+                overflow: auto
+                overflow-y: visible
+                padding: 0 0 27px 20px
+                place
+                    min-width: 203px
+        #trips-container
+            @include headerContainer
+            #trip-list
+                padding: 0 20px
+                display: flex
+                flex-direction: column
+                gap: 20px

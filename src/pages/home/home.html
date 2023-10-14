@@ -16,14 +16,24 @@
                 <h2>Lugares famosos</h2>
                 <p routerLink="/places-list">Ver mais</p>
             </ion-col>
-
             <ion-col id="places-list" class="ion-no-padding">
                 <place [data]="{}"></place>
                 <place [data]="{}"></place>
                 <place [data]="{}"></place>
                 <place [data]="{}"></place>
             </ion-col>
-            
+        </ion-row>
+        <ion-row id="trips-container">
+            <ion-col id="header-container" class="ion-no-padding" size="12">
+                <h2>Minhas viagens</h2>
+                <p routerLink="/trips-list">Ver mais</p>
+            </ion-col>
+            <ion-col id="trip-list" class="ion-no-padding" size="12">
+                <trip [data]="{}"></trip>
+                <trip [data]="{}"></trip>
+                <trip [data]="{}"></trip>
+                <trip [data]="{}"></trip>
+            </ion-col>
         </ion-row>
         <ion-row></ion-row>
     </ion-grid>
