@@ -6,7 +6,11 @@ ion-card
     border-radius: 10px
     ion-grid
         ion-row
+            display: grid
+            grid-template-columns: 90px auto
             #image-container
+                min-width: 90px
+                min-height: 116px
                 ion-img
                     height: 100%
                     min-height: 116px
@@ -20,6 +24,7 @@ ion-card
                 justify-content: space-between
                 flex: none
                 ion-row
+                    display: flex
                     height: 100%
                     p
                         margin: 0
@@ -30,14 +35,16 @@ ion-card
                         #local-container
                             display: flex
                             align-items: center
+                            margin-top: 5px
                             p
                                 font-size: .9rem
                                 margin: 0 0 0 5px
                                 font-family: 'inter-medium'
                     #status-container
+                        width: 100%
                         display: flex
                         justify-content: space-between
-                        align-items: end
+                        align-items: flex-end
                         #price
                             font-family: 'inter-medium'
                             font-size: 1rem
