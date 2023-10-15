@@ -59,6 +59,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/categorie-list/categorie-list.module').then(m => m.CategorieListModule)
       },
       {
+        path: 'place-list',
+        loadChildren: () => import('../pages/place-list/place-list.module').then(m => m.PlaceListModule)
+      },
+      {
         path: 'trip-list',
         loadChildren: () => import('../pages/trip-list/trip-list.module').then(m => m.TripListModule)
       },
