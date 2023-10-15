@@ -6,6 +6,9 @@ import { SignUp } from '../pages/sign-up/sign-up';
 import { Home } from '../pages/home/home';
 import { ArView } from '../pages/ar-view/ar-view';
 import { TabNavigation } from 'src/components/tab-navigation/tab-navigation';
+import { PlaceView } from 'src/pages/place-view/place-view';
+import { PlaceNew } from 'src/pages/place-new/place-new';
+import { TripView } from 'src/pages/trip-view/trip-view';
 const routes: Routes = [
   {
     path: '',
@@ -27,6 +30,21 @@ const routes: Routes = [
     path: 'sign-up',
     component: SignUp,
     loadChildren: () => import('../pages/sign-up/sign-up.module').then(m => m.SignUpModule)
+  },
+  {
+    path: 'place-view',
+    component: PlaceView,
+    loadChildren: () => import('../pages/place-view/place-view.module').then(m => m.PlaceViewModule)
+  },
+  {
+    path: 'place-new',
+    component: PlaceNew,
+    loadChildren: () => import('../pages/place-new/place-new.module').then(m => m.PlaceNewModule)
+  },
+  {
+    path: 'trip-view',
+    component: TripView,
+    loadChildren: () => import('../pages/trip-view/trip-view.module').then(m => m.TripViewModule)
   },
   {
     path: '',
